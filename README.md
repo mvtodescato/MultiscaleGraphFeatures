@@ -1,6 +1,6 @@
 # Multiscale Patch-based Feature Graphs for Image Classification
 
-Method based on multi scale context features for image classification. This method allows the learning process to take advantage of all the information contained in the imagens, decreasing the information loss in the learning process. Our approach use the idea of aggregating image features at different scales, taking advantage of tranfer learning, being a suitable strategy to deal with images of different sizes and small datasets.
+Method based on Multiscale Patch-based Feature Graphs for Image Classification. Images present visual features in different scales in real-world scenarios, and most common approaches do not consider this fact. Our approach applies transfer learning for dealing with small datasets and leverages visual features extracted by pre-trained models from different scales. We based our approach on graph convolutional networks (GCN) that take graphs representing the images in different scales as input and whose nodes are characterized by features extracted by pre-trained models from regular image patches of different scales.
 
 # Code files
 -patchbased_graph.py
