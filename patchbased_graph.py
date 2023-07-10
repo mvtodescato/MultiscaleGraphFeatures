@@ -233,14 +233,8 @@ def generate_patchs(im, N, s):
             final_cord.append(cord[index])
 
     #ordering patches
-    cord_index = []
-    cord_index2 = []
-    for i in range(0,new_h,s):
-        for j in range(0,new_w,s):
-            for index in range(len(final_cord)):
-                if final_cord[index] == [i,j]:
-                    cord_index.append(final_tiles[index])
-                    cord_index2.append([i,j])
+    cord_index = final_tiles
+    cord_index2 = final_cord
 
     #creating edges
     edges = []
